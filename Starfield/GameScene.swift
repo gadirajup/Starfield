@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var score = 0 {
         didSet {
@@ -22,6 +22,9 @@ class GameScene: SKScene {
     private var scoreLabel : SKLabelNode!
     
     override func didMove(to view: SKView) {
+        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        physicsWorld.contactDelegate = self
+        
         backgroundColor = .black
         
         scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
@@ -41,6 +44,8 @@ class GameScene: SKScene {
         player = SKSpriteNode(imageNamed: "player")
         player.position = CGPoint(x: 64, y: 384)
         player.zPosition = 0
+        player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
+        player.physicsBody?.contactTestBitMask = 1
         addChild(player)
     }
     
