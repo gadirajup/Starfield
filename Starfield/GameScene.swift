@@ -11,17 +11,34 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
+    
+    private var player : SKSpriteNode!
+    private var starField : SKEmitterNode!
+    private var scoreLabel : SKLabelNode!
     
     override func didMove(to view: SKView) {
-        let starField = SKEmitterNode(fileNamed: "starfield.sks")!
+        backgroundColor = .black
+        
+        scoreLabel = SKLabelNode(fontNamed: "Chalkduster")
+        scoreLabel.fontSize = 24
+        scoreLabel.position = CGPoint(x: 16, y: 36)
+        scoreLabel.zPosition = 0
+        scoreLabel.horizontalAlignmentMode = .left
+        addChild(scoreLabel)
+        score = 0
+        
+        starField = SKEmitterNode(fileNamed: "starfield.sks")!
         starField.position = CGPoint(x: 1024, y: 384)
         starField.zPosition = -1
         starField.advanceSimulationTime(10)
         addChild(starField)
         
-        let player = SKSpriteNode(imageNamed: "player")
+        player = SKSpriteNode(imageNamed: "player")
         player.position = CGPoint(x: 64, y: 384)
         player.zPosition = 0
         addChild(player)
