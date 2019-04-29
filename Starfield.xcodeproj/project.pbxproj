@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		A41C25DB227775D9008D7C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C25DA227775D9008D7C83 /* AppDelegate.swift */; };
 		A41C25DD227775D9008D7C83 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A41C25DC227775D9008D7C83 /* GameScene.sks */; };
-		A41C25DF227775D9008D7C83 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A41C25DE227775D9008D7C83 /* Actions.sks */; };
 		A41C25E1227775D9008D7C83 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C25E0227775D9008D7C83 /* GameScene.swift */; };
 		A41C25E3227775D9008D7C83 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C25E2227775D9008D7C83 /* GameViewController.swift */; };
 		A41C25E6227775D9008D7C83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41C25E4227775D9008D7C83 /* Main.storyboard */; };
 		A41C25E8227775D9008D7C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41C25E7227775D9008D7C83 /* Assets.xcassets */; };
 		A41C25EB227775D9008D7C83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41C25E9227775D9008D7C83 /* LaunchScreen.storyboard */; };
+		A41C25F32277764F008D7C83 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = A41C25F22277764F008D7C83 /* starfield.sks */; };
+		A41C25F522777656008D7C83 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A41C25F422777656008D7C83 /* explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A41C25D7227775D9008D7C83 /* Starfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41C25DA227775D9008D7C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A41C25DC227775D9008D7C83 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		A41C25DE227775D9008D7C83 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		A41C25E0227775D9008D7C83 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A41C25E2227775D9008D7C83 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A41C25E5227775D9008D7C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A41C25E7227775D9008D7C83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41C25EA227775D9008D7C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41C25EC227775D9008D7C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41C25F22277764F008D7C83 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
+		A41C25F422777656008D7C83 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +64,14 @@
 			children = (
 				A41C25DA227775D9008D7C83 /* AppDelegate.swift */,
 				A41C25DC227775D9008D7C83 /* GameScene.sks */,
-				A41C25DE227775D9008D7C83 /* Actions.sks */,
 				A41C25E0227775D9008D7C83 /* GameScene.swift */,
 				A41C25E2227775D9008D7C83 /* GameViewController.swift */,
 				A41C25E4227775D9008D7C83 /* Main.storyboard */,
 				A41C25E7227775D9008D7C83 /* Assets.xcassets */,
 				A41C25E9227775D9008D7C83 /* LaunchScreen.storyboard */,
 				A41C25EC227775D9008D7C83 /* Info.plist */,
+				A41C25F422777656008D7C83 /* explosion.sks */,
+				A41C25F22277764F008D7C83 /* starfield.sks */,
 			);
 			path = Starfield;
 			sourceTree = "<group>";
@@ -134,8 +137,9 @@
 				A41C25E6227775D9008D7C83 /* Main.storyboard in Resources */,
 				A41C25DD227775D9008D7C83 /* GameScene.sks in Resources */,
 				A41C25E8227775D9008D7C83 /* Assets.xcassets in Resources */,
+				A41C25F522777656008D7C83 /* explosion.sks in Resources */,
+				A41C25F32277764F008D7C83 /* starfield.sks in Resources */,
 				A41C25EB227775D9008D7C83 /* LaunchScreen.storyboard in Resources */,
-				A41C25DF227775D9008D7C83 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
